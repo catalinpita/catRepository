@@ -8,11 +8,21 @@
 <body>
   <form>
     <label for="name">Nume</label>
-    <input type="text" id="name" name="name" value="Dragos">
+    <input type="text" id="name" name="name" value="Pita"><br>
+    <label for="surname">Prenume</label>
+    <input type="text" id="surname" name="surname" value="catalin"><br>
     
+<button type="submit">Trimite</button>
+<button type="reset">Reset</button>
+    <script>
+    var resetButton = document.getElementById('reset'),
+    nameField = document.getElementById('name'),
+    surename = document.getElementById('surname');
 
-
-    
+    resetButton.addEventListener('click',function 
+    nameField.value='';
+    surenameField.value='';)}
+    </script>
   </form>
 </body>
 </html>
