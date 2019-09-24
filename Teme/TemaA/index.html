@@ -10,13 +10,13 @@
 
 <body>
     <p>
-        <a href="https://google.ro">Home</a>
+        <a href="https://google.ro" title="Home">Home</a>
         *
-        <a href="https://google.ro"><b>Place Order</b></a>
+        <a href="#submitForm" title="Submit form" target="_blank"><b>Place Order</b></a>
         *
-        <a href="https://google.ro">Customer Service</a>
+        <a href="https://google.ro" title="Customer Service">Customer Service</a>
         *
-        <a href="https://google.ro">Contact</a>
+        <a href="https://google.ro" title="Contact">Contact</a>
     </p>
     <h1>Place Order</h1>
     <p>
@@ -62,109 +62,109 @@
         <li>Then we need your real shipping address. </li>
         <li>Finally, your credit card information.</li>
     </ol>
-    <form>
-    <fieldset>
-        <legend>Personal Information</legend>
-        <label>Tilte:</label>
-        <label for="mr">Mr.</label>
-        <input type="radio" name="title" id="mr">
-        <label for="mrs">Mrs.</label>
-        <input type="radio" name="title" id="mrs">
-        <label for="unspecified">Unspecified</label>
-        <input type="radio" name="title" id="unspecified" checked>
-        <br><br>
-        <label for="personalInfoName">*Name:</label>
-        <input type="text" name="name" id="personalInfoName" placeholder="Name" required>
-        <br><br>
-        <label for="personalInfoSurname">*Surame:</label>
-        <input type="text" name="surname" id="personalInfoSurname" placeholder="Surname" required>
-        <br><br>
-        <label for="personalInfoEmail">*Email:</label>
-        <input type="text" name="email" id="personalInfoEmail" placeholder="Email" required>
-        <br><br>
-        <label for="phone">*Phone:</label>
-        <input type="tel" name="phone" id="phone" placeholder="Phone" required>
-    </fieldset>
-    <fieldset>
-        <legend>Adress</legend>
-        <label for="name">*Name:</label>
-        <input type="text" name="name" id="name" placeholder="Name" required>
-        <br><br>
-        <label for="surname">*Surame:</label>
-        <input type="text" name="surname" id="surname" placeholder="Surname" required>
-        <br><br>
-        <label for="phone">*Phone:</label>
-        <input type="tel" name="phone" id="phone" placeholder="Phone" required>
-        <br><br>
-        <label for="adressLine1">*AdressLine 1:</label>
-        <input type="text" name="adressLine1" id="adressLine1" placeholder="AdressLine 1" required>
-        <br><br>
-        <label for="adressLine2">AdressLine 2:</label>
-        <input type="text" name="adressLine2" id="adressLine2" placeholder="AdressLine 2">
-        <br><br>
-        <label for="city">*City:</label>
-        <input type="text" name="city" id="city" placeholder="City" required>
-        <br><br>
-        <label for="state">*State:</label>
-        <select name="state" id="state" required>
-            <option value="default">--State--</option>
-            <option value="IF">Ilfov</option>
-            <option value="GR">Giurgiu</option>
-            <option value="AG">Arges</option>
-        </select>
-        <br><br>
-        <label for="Postcode">*Postcode:</label>
-        <input type="text" name="postcode" id="postcode" placeholder="Postcode" required>
-        <br><br>
-    </fieldset>
-    <fieldset>
-        <legend>Card Information</legend>
-        <label for="cardNumber">*Card number</label>
-        <input type="text" name="cardNumber" id="cardNumber" placeholder="Card Number" required>
-        <br><br>
-        <label for="nameOnCard">*Name on card:</label>
-        <input type="text" name="nameOnCard" id="nameOnCard" placeholder="Name on card" required>
-        <br><br>
-        <label for="expiryMonth">*Expiry Month</label>
-        <select name="expiryMonth" id="expiryMonth" required>
-            <option value="1">January</option>
-            <option value="2">February</option>
-            <option value="3">March</option>
-            <option value="4">April</option>
-            <option value="5">May</option>
-            <option value="6">June</option>
-            <option value="7">July</option>
-            <option value="8">August</option>
-            <option value="9">September</option>
-            <option value="10">October</option>
-            <option value="11">November</option>
-            <option value="12">December</option>
-        </select>
-        <label for="expiryYear">*Expiry Year:</label>
-        <input type="number" name="expiryYear" id="expiryYear" placeholder="2019" min="2019" required>
-        <br><br>
-        <label for="cvv">CVV</label>
-        <input type="number" name="cvv" id="cvv" placeholder="CVV" minlength="3" maxlength="3" required>
-        <br>
-        <p><i>We do not store credit card information!</i></p>
-    </fieldset>
-    <fieldset>
-        <legend>Form Control</legend>
-        <input type="checkbox" name="termsAndConditionsConsent" id="termsAndConditionsConsent" required>
-        <label for="termsAndConditionsConsent">*You are required to agree to the 
-            <a href="https://google.ro">terms and conditions</a>
-        </label>
-        <br><br>
-        <input type="checkbox" name="emailConsent" id="emailConsent">
-        <label for="emailConsent">Can we send you emails?</label>
-        <br><br>
-        <input type="checkbox" name="gdprConsent" id="gdprConsent">
-        <label for="gdprConsent">GDPR generic consent?</label>
-        <br><br>
+    <form id="submitForm">
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label>Tilte:</label>
+            <label for="mr">Mr.</label>
+            <input type="radio" name="title" id="mr">
+            <label for="mrs">Mrs.</label>
+            <input type="radio" name="title" id="mrs">
+            <label for="unspecified">Unspecified</label>
+            <input type="radio" name="title" id="unspecified" checked>
+            <br><br>
+            <label for="personalInfoName">*Name:</label>
+            <input type="text" name="name" id="personalInfoName" placeholder="Name" required>
+            <br><br>
+            <label for="personalInfoSurname">*Surame:</label>
+            <input type="text" name="surname" id="personalInfoSurname" placeholder="Surname" required>
+            <br><br>
+            <label for="personalInfoEmail">*Email:</label>
+            <input type="text" name="email" id="personalInfoEmail" placeholder="Email" required>
+            <br><br>
+            <label for="personalInfoPhone">*Phone:</label>
+            <input type="tel" name="phone" id="personalInfoPhone" placeholder="Phone" required>
+        </fieldset>
+        <fieldset>
+            <legend>Adress</legend>
+            <label for="name">*Name:</label>
+            <input type="text" name="name" id="name" placeholder="Name" required>
+            <br><br>
+            <label for="surname">*Surame:</label>
+            <input type="text" name="surname" id="surname" placeholder="Surname" required>
+            <br><br>
+            <label for="phone">*Phone:</label>
+            <input type="tel" name="phone" id="phone" placeholder="Phone" required>
+            <br><br>
+            <label for="adressLine1">*AdressLine 1:</label>
+            <input type="text" name="adressLine1" id="adressLine1" placeholder="AdressLine 1" required>
+            <br><br>
+            <label for="adressLine2">AdressLine 2:</label>
+            <input type="text" name="adressLine2" id="adressLine2" placeholder="AdressLine 2">
+            <br><br>
+            <label for="city">*City:</label>
+            <input type="text" name="city" id="city" placeholder="City" required>
+            <br><br>
+            <label for="state">*State:</label>
+            <select name="state" id="state" required>
+                <option value="default">--State--</option>
+                <option value="IF">Ilfov</option>
+                <option value="GR">Giurgiu</option>
+                <option value="AG">Arges</option>
+            </select>
+            <br><br>
+            <label for="Postcode">*Postcode:</label>
+            <input type="text" name="postcode" id="postcode" placeholder="Postcode" required>
+            <br><br>
+        </fieldset>
+        <fieldset>
+            <legend>Card Information</legend>
+            <label for="cardNumber">*Card number</label>
+            <input type="text" name="cardNumber" id="cardNumber" placeholder="Card Number" required>
+            <br><br>
+            <label for="nameOnCard">*Name on card:</label>
+            <input type="text" name="nameOnCard" id="nameOnCard" placeholder="Name on card" required>
+            <br><br>
+            <label for="expiryMonth">*Expiry Month</label>
+            <select name="expiryMonth" id="expiryMonth" required>
+                <option value="1">January</option>
+                <option value="2">February</option>
+                <option value="3">March</option>
+                <option value="4">April</option>
+                <option value="5">May</option>
+                <option value="6">June</option>
+                <option value="7">July</option>
+                <option value="8">August</option>
+                <option value="9">September</option>
+                <option value="10">October</option>
+                <option value="11">November</option>
+                <option value="12">December</option>
+            </select>
+            <label for="expiryYear">*Expiry Year:</label>
+            <input type="number" name="expiryYear" id="expiryYear" placeholder="2019" val="2019" min="2019" required>
+            <br><br>
+            <label for="cvv">*CVV</label>
+            <input type="number" name="cvv" id="cvv" placeholder="CVV" minlength="3" maxlength="3" required>
+            <br>
+            <p><i>We do not store credit card information!</i></p>
+        </fieldset>
+        <fieldset>
+            <legend>Form Control</legend>
+            <input type="checkbox" name="termsAndConditionsConsent" id="termsAndConditionsConsent" required>
+            <label for="termsAndConditionsConsent">*You are required to agree to the
+                <a href="https://google.ro">terms and conditions</a>
+            </label>
+            <br><br>
+            <input type="checkbox" name="emailConsent" id="emailConsent">
+            <label for="emailConsent">Can we send you emails?</label>
+            <br><br>
+            <input type="checkbox" name="gdprConsent" id="gdprConsent">
+            <label for="gdprConsent">GDPR generic consent?</label>
+            <br><br>
 
-        <input type="submit">
-        <input type="reset">
-    </fieldset>
+            <input type="submit" value="Place Order">
+            <input type="reset">
+        </fieldset>
     </form>
     <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
