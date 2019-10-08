@@ -1,0 +1,42 @@
+body {
+  padding: 8px;
+  padding-bottom: 60px;
+  padding-left: 170px;
+}
+.container {
+  border: 1px solid #000; 
+  padding: 5px;
+  position: relative;
+}
+
+.nav-absolute {
+  background-color: brown;
+  text-decoration-color: blue;
+  bottom: 0px;
+  right: 0px;
+  position: absolute;
+}
+
+.dedicated-word {
+  position: absolute;
+  top: -9px;
+  left: 3px;
+  background-color: grey;
+  border: 1px solid red;
+  padding-right: 3px;
+  padding-left: 3px; 
+}
+
+.sup-formula {
+  font-size: 10px;
+  position: relative;
+  bottom: 5px;
+}
+
+ .nav-new-added {
+  background-color: green;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  padding: 6px;
+}
