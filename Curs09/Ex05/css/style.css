@@ -2,24 +2,50 @@
   width: 25px; 
   height: 25px; 
   display: inline-block;
-}
+ }
 
+/*Tranzitioneaza lungimea cutiei rosii de la valoarea initiala la 120px pentru trei secunde*/
 .box-red {
   background-color: red;
+  transition: 3s width;
 }
-
+.box-red:hover{
+  width: 120px;
+}
+/*Roteste cutia verde 360 de grade si creste-i dimensiunile cu 5px pentru 5 secunde*/
 .box-green {
   background-color: green;
+  transition: 5s all;
 }
-
+.box-green:hover {
+  width: 30px;
+  height: 30px;
+  transform: rotate(360deg);
+}
+/*Tranzitioneaza lungimea si latimea cutiei mov pana la 100px peste 4 secunde 
+cu functia ease si un delay de o secunda */
 .box-purple {
   background-color: purple;
+  transition: 4s width ese-in 1s, 4s height ese-in 1s
 }
-
+.box-purple:hover {
+  width: 100px;
+  height: 100px;
+}
+/*Roteste cutia maro cu -180 de grade si scade-i dimensiunile cu 10 pixel pentru 4 secunde cu functia ease-in*/
 .box-brown {
   background-color: brown;
+  transition: transform 5s ease-in;
 }
-
+.box-brown:hover {
+  background-color: brown;
+  transform: rotate(360deg) scale(5);
+}
+/*Tranzitioneaza functia transform scale(2) pe o perioada de 3 secunde cu functia ease-in-out*/
 .box-yellow {
   background-color: yellow;
+  transition: transform 3s ease-in-out;
+}
+.box-yellow:hover {
+ transform: scale(5);
 }
