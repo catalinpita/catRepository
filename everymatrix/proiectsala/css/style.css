@@ -402,7 +402,13 @@ a {
 body {
   color: #707070;
 }
-heade {
+
+.container {
+  width: 1280px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+header {
   padding: 1Opx;
 }
 .logo{
@@ -466,7 +472,7 @@ heade {
   position: relative;
 }
 
-.content .carousel .h1 {
+.content .carousel h1 {
   font-family: 'robotobold';
   font-size: 75px;
   margin: 115px 0 0 0;
@@ -482,4 +488,5 @@ heade {
   position: absolute;
   bottom:  0;
   right: 0;
+  text-align: right;
 }
