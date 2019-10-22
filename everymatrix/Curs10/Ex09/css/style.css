@@ -1,7 +1,15 @@
 /* add code here */
+h1 #header{
+  color:green;
+  text-decoration: underline;
+  padding: 5px;
+}
 
-
-
+#container p .para{
+  font-size: 25px;
+  font-style: none;
+  color:purple;
+}
 /* add code here */
 
 
