@@ -497,6 +497,7 @@ header {
 .filter-form {
   display: flex;
   justify-content: space-around;
+  align-items: center;
 }
 
 .filter-form select {
@@ -512,7 +513,7 @@ header {
   height: 50px;
   text-transform: uppercase;
   border-radius: 25px;
-  padding: 20;
+  padding: 0 20px;
   color: #FFF;
 }
 
