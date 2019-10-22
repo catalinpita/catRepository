@@ -24,23 +24,86 @@ body {
 
 .box-4 {
   background-color: purple;
+  color: red;
 }
 
 .box-5 {
   background-color: lightpink;
 }
-
-
+body>h1 {
+  display: none;
+}
+body>h2 {
+  display: none;
+}
 @media (max-width: 576px) {
-
+  .box-2 {
+    display: none;
+  }
+  /*Ascunde casuta 1 pentru rezolutiile mai mici de 576px*/
+  .box-1 {
+    display: none;
+  }
+  /*Micsoreaza la 15 paddingul de pe elementul body pentru rezolutiile de sub 576px */
+  body  {
+    padding: 15px;
+  }
 }
-
+/*Coloreaza textul casutei 5 alb pe rezolutiile mai mici de 768px*/
 @media (max-width: 768px) {
-
+  .box-3 {
+    border:green 5px solid;
+  }
+  .box-5 {
+    color: white;
+  }
 }
-
+/*Ascunde casuta 4 pe rezolutiile mai mici de 992px */
 @media (max-width: 992px) {
-
+  .box-3 {
+   display: none;
+  }
+  .box-4 {
+    display: none;
+    color:black;
+  }
+  /*Coloreaza bordura si textul casutei 2 albe pentru rezolutiile de pana in 992 */
+  .box-2 {
+    text-decoration-color: white;
+    border: white solid ;
+  }
 }
 
+@media (max-wwidth:1200px) {
+  .box-5 {
+    display: none;
+  }
+}
+
+@media (min-width: 600px) and (max-with: 1200px) {
+  body>h1 {
+    display: block;
+    }
+    
+}
+
+
+/*Adauga un element h2 deasupra casutelor si afiseaza-l intre rezolutiile de 500px si 100px*/
+@media (min-width: 100px) and (max-width: 500px) {
+  body>h2 {
+    display: block;
+  }
+}
+
+body > h3 {
+  display: none;
+}
+/*Creeaza un element h3 sub casute si afiseaza-l pentru rezolutiile MAI MARI de 576px (min-width)*/
+@media (min-width: 576px) {
+  body>h3 {
+    display: block;
+  }
+}
+/*Coloreaza rosu acest nou element pentru rezolutiile mai mari de 1000px */
+/*Ascunde din nou elementul nou pentru rezolutiile mai mari de 1200pxv*/
 
