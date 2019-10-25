@@ -538,7 +538,6 @@ header {
 .swatch {
   width: 50px;
   height: 50px;
-  display: inline-block;
   overflow: hidden;
   text-indent: -10000px;
   display: flex;
@@ -564,6 +563,51 @@ header {
   background: url('../images/swatches/9ch6ixdy.jpg') no-repeat center center;
 }
 
+.swatch-03::after {
+  background: url('../images/swatches/ec6vtojh.jpg') no-repeat center center;
+}
+
+.swatch-04::after {
+  background: url('../images/swatches/gc5j72yj.jpg') no-repeat center center;
+}
+
+.swatch-05::after {
+  background: url('../images/swatches/xuuv6wx8.jpg ') no-repeat center center;
+}
+/*TODO
+.swatch.discount-filter {
+  content:"%" ;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #E0E0E0;
+  text-decoration-color: #FF6B6B;
+  font-family: "robotobold";
+  display: flex;
+  overflow: hidden;
+  text-indent: 9px;
+  
+}
+.swatch.discount::after {
+  width: 32px;
+  height: 32px;
+  border-radius: 50px;
+
+  
+} 
+.swatch.signed {
+  content:"%";
+  background: #E0E0E0;
+  text-decoration-color: #FF6B6B;
+  font-family: "robotobold";
+  display: flex;
+  overflow: hidden;
+  text-indent: -10000px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+*/
 .content-main {
   margin: 120px 0 0 0;
 }
