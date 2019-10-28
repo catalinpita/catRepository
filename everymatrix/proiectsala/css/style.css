@@ -493,7 +493,7 @@ header {
   right: 0;
   text-align: right;
 }
-/*-------------*/
+
 .content-header {
   margin: 50px 0 0 0;
 }
@@ -576,40 +576,36 @@ header {
 .swatch-05::after {
   background: url('../images/swatches/xuuv6wx8.jpg ') no-repeat center center;
 }
-/*TODO
-.swatch.discount-filter {
-  content:"%" ;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: #E0E0E0;
-  text-decoration-color: #FF6B6B;
-  font-family: "robotobold";
-  display: flex;
-  overflow: hidden;
-  text-indent: 9px;
-  
-}
-.swatch.discount::after {
+
+/*-------------------*/
+.swatch.discount-filter,
+.swatch.signed-filter {
   width: 32px;
   height: 32px;
-  border-radius: 50px;
-
-  
-} 
-.swatch.signed {
-  content:"%";
-  background: #E0E0E0;
-  text-decoration-color: #FF6B6B;
-  font-family: "robotobold";
-  display: flex;
-  overflow: hidden;
-  text-indent: -10000px;
-  display: flex;
-  justify-content: center;
+  border-radius: 30px;
+  /* display: flex; */
+  /* justify-content: center;
   align-items: center;
+  text-align: center; */
+  color: #FFFF;
 }
-*/
+
+.swatch.discount-filter:after {
+  content: "%"
+}
+
+.swatch.signed-filter {
+  content: "signed"
+}
+
+.discount-filter {
+    font-size: 24px;
+    background-color: #B8C1C1;
+}
+.signed-filter {
+  background-color: #2F4766;
+}
+/*-------------------*/
 .content-main {
   margin: 120px 0 0 0;
 }
@@ -802,6 +798,7 @@ font-weight: normal;
 .store-contact h5 {
   margin-bottom: 10px;
 }
+
 .store-contact a[href^="mailto"] {
   color: #FF6B6B;
 }
