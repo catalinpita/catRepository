@@ -443,8 +443,8 @@ header {
 
 .nav-secondary {
   text-align: center;
-
 }
+
 .nav-secondary ul{
  display: inline-block;
 }
@@ -458,15 +458,16 @@ header {
   text-transform: uppercase;
   font-size: 14px;
 }
+
 .nav-secondary a:active,
 .nav-secondary a:hover{
   color:#FF6B6B;
 }
 
 .content .carousel {
-   background: url('../images/banners/banner02.jpg') no-repeat 50% 50%;
-   background-size: cover;
-   }
+  background: url('../images/banners/banner02.jpg') no-repeat 50% 50%;
+  background-size: cover;
+}
 
 .content .carousel .container {
   min-height: 570px;
@@ -492,6 +493,7 @@ header {
   right: 0;
   text-align: right;
 }
+/*-------------*/
 .content-header {
   margin: 50px 0 0 0;
 }
