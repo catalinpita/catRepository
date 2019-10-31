@@ -410,9 +410,65 @@ body {
   max-width: 100%;
   margin: 0 auto;
 }
-header {
-  padding: 1Opx;
+.header {
+  margin-bottom: 1Opx;
 }
+.header-top {
+  overflow: hidden;
+}
+
+.header-contact {
+  display: flex;
+  align-items: center;
+  float:left;
+}
+
+.header-contact .icon{
+  color: #FF6B6B;
+  font-size: 28px;
+  display: inline-block;
+  padding-right: 5px;
+}
+
+.user-controls {
+  float: right;
+  display: flex;
+  align-items: center;
+  margin: 10px 0 0 0;
+}
+
+.user-controls .icon {
+  font-size: 20px;
+  display: inline-block;
+}
+
+.user-controls .cart {
+  display: inline-block;
+  margin-left: 25px;
+}
+
+.user-controls .cart .icon {
+ font-size: 30px;
+}
+
+.cart .cart-quantity {
+  background-color: #FF6B6B;
+  padding: 3px;
+  min-height: 20px;
+  min-width: 20px;
+  color: white;
+  display:inline-block;
+  text-align:center;
+  line-height: 20px;
+  font-weight: bold;
+  border-radius: 30px;
+
+  position: relative;
+  left: -10px;
+  top: -10px;
+}
+
+
 .logo{
   text-align: center;
 }
@@ -743,7 +799,7 @@ header {
 }
 
 .footer-top {
-  min-height: 320px;
+  min-height: 250px;
   padding-top: 40px;
   background: url('../images/banners/2q12iv2u.jpg') #1B1927 no-repeat top right;
 }
@@ -770,6 +826,14 @@ font-weight: normal;
   margin-top:60px;
 }
 
+.customer-support .icon {
+  color: #FF6B6B;
+  font-size: 35px;
+  display: block;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
 .customer-support li {
   display: inline-block;
   margin-right: 20px;
@@ -779,7 +843,7 @@ font-weight: normal;
   float: left;
   width: 285px;
   color:#AEAEAE;
-  margin-left: 120px;
+  margin: 28px 0 0 117px;
 }
 
 .store-contact a[href^="tel"] {
