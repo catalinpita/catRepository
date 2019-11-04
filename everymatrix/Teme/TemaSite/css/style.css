@@ -431,7 +431,7 @@ body {
 }
 
 .footer-top {
-  min-height: 320px;
+  min-height: 250px;
   padding-top: 40px;
   background: url('../images/banners/2q12iv2u.jpg') #1B1927 no-repeat top right;
 }
@@ -475,7 +475,7 @@ font-weight: normal;
   float: left;
   width: 285px;
   color:#AEAEAE;
-  margin-left: 120px;
+  margin: 28px 0 0 117px;  
 }
 
 .store-contact a[href^="tel"] {
