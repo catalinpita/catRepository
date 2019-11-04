@@ -42,9 +42,66 @@ body {
   margin: 0 auto;
 }
 
-header {
-  padding: 1Opx;
+.header {
+  margin-bottom: 1Opx;
 }
+
+.header-top {
+  overflow: hidden;
+}
+
+.header-contact {
+  display: flex;
+  align-items: center;
+  float:left;
+}
+
+.header-contact .icon{
+  color: #FF6B6B;
+  font-size: 28px;
+  display: inline-block;
+  padding-right: 5px;
+}
+
+.user-controls {
+  float: right;
+  display: flex;
+  align-items: center;
+  margin: 10px 0 0 0;
+}
+
+.user-controls .icon {
+  font-size: 20px;
+  display: inline-block;
+}
+
+.user-controls .cart {
+  display: inline-block;
+  margin-left: 25px;
+}
+
+.user-controls .cart .icon {
+ font-size: 30px;
+}
+
+.cart .cart-quantity {
+  background-color: #FF6B6B;
+  padding: 3px;
+  min-height: 20px;
+  min-width: 20px;
+  color: white;
+  display:inline-block;
+  text-align:center;
+  line-height: 20px;
+  font-weight: bold;
+  border-radius: 30px;
+
+  position: relative;
+  left: -10px;
+  top: -10px;
+}
+
+
 
 .logo{
   text-align: center;
@@ -208,6 +265,30 @@ header {
 
 .swatch-05::after {
   background: url('../images/swatches/xuuv6wx8.jpg ') no-repeat center center;
+}
+
+.swatch.discount-filter,
+.swatch.signed-filter {
+  width: 32px;
+  height: 32px;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #FFFF;
+  text-indent: 0;
+}
+
+.discount-filter {
+    font-size: 20px;
+    background-color: #B8C1C1;
+    text-align: center;
+}
+
+.signed-filter {
+  background-color: #2F4766;
+  font-size: 10px;
 }
 
 .content-main {
@@ -375,6 +456,14 @@ font-weight: normal;
 .customer-support {
   clear: both;
   margin-top:60px;
+}
+
+.customer-support .icon {
+  color: #FF6B6B;
+  font-size: 35px;
+  display: block;
+  text-align: center;
+  margin-bottom: 10px;
 }
 
 .customer-support li {
